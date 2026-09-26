@@ -110,10 +110,10 @@ def bs_vega(S0, K, T, r, sigma):
     return S0 * sqrt_T * norm.pdf(d1)
 
 
-print(bs_price(100, 110, 2, 0.05, 0.2, kind='call'))   # Example usage
-print(bs_delta(100, 110, 2, 0.05, 0.2, kind='call'))   # Example usage
-print(bs_vega(100, 110, 2, 0.05, 0.2))                 # Example usage
+# print(bs_price(100, 110, 2, 0.05, 0.2, kind='call'))   # Example usage
+# print(bs_delta(100, 110, 2, 0.05, 0.2, kind='call'))   # Example usage
+# print(bs_vega(100, 110, 2, 0.05, 0.2))                 # Example usage
 
-print(bs_price(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
-print(bs_delta(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
-print(bs_vega(100, 90, 1.5, 0.05, 0.2))                # Example usage
+# print(bs_price(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
+# print(bs_delta(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
+# print(bs_vega(100, 90, 1.5, 0.05, 0.2))                # Example usage
