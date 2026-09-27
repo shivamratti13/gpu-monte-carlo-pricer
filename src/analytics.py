@@ -117,3 +117,29 @@ def bs_vega(S0, K, T, r, sigma):
 # print(bs_price(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
 # print(bs_delta(100, 90, 1.5, 0.05, 0.2, kind='put'))   # Example usage
 # print(bs_vega(100, 90, 1.5, 0.05, 0.2))                # Example usage
+
+'''
+S0 = 100.0
+K = 100.0
+T = 1.0
+r = 0.05
+sigma = 0.20
+
+call = bs_price(S0, K, T, r, sigma, "call")
+put = bs_price(S0, K, T, r, sigma, "put")
+
+delta = bs_delta(S0, K, T, r, sigma)
+vega = bs_vega(S0, K, T, r, sigma)
+
+print(f"Call : {call:.6f}")
+print(f"Put  : {put:.6f}")
+print(f"Delta: {delta:.6f}")
+print(f"Vega : {vega:.6f}")
+
+lhs = call - put
+rhs = S0 - K * math.exp(-r * T)
+
+print("LHS:", lhs)
+print("RHS:", rhs)
+print("Residual:", abs(lhs - rhs))
+'''
